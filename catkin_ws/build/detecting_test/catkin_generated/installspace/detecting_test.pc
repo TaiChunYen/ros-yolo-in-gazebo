@@ -1,0 +1,8 @@
+prefix=/home/taita/catkin_ws/install
+
+Name: detecting_test
+Description: Description of detecting_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/taita/catkin_ws/install/lib 
+Requires: 

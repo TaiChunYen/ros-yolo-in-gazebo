@@ -1,0 +1,15 @@
+export TURTLEBOT3_MODEL=burger(or waffle or waffle_pi)
+
+waffle相機影像：
+rosrun image_view image_view image:=/camera/rgb/image_raw
+
+執行yolo:
+roslaunch darknet_ros yolo_v3.launch
+darknet_ros/darknet_ros/config/ros.yaml可調整輸入影像的topic
+
+鍵盤操控TURTLEBOT：
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+
+
+
