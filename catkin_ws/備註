@@ -10,6 +10,9 @@ darknet_ros/darknet_ros/config/ros.yaml可調整輸入影像的topic
 鍵盤操控TURTLEBOT：
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
+打開自製world:
+roslaunch turtlebot3_gazebo self_world.launch
+
 
 
 
