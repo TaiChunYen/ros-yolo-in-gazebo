@@ -18,6 +18,7 @@ c12a22573a8d2baf1d93e1cc0ad91974 /home/taita/catkin_ws/devel/include/turtlebot3_
 51829060fa061040f33faa7348290fa0 /home/taita/catkin_ws/devel/include/turtlebot3_msgs/SensorState.h
 35da0a0cea7ea1015ebb3b0b148ff231 /home/taita/catkin_ws/devel/include/turtlebot3_msgs/Sound.h
 bed9843cc80553d8971b49240e20a317 /home/taita/catkin_ws/devel/include/turtlebot3_msgs/VersionInfo.h
+<<<<<<< HEAD
 e92da2d908324f4729c190cd63b531ae /home/taita/catkin_ws/devel/include/zed_wrapper/ZedConfig.h
 d711c0163313881798710825c8ea1483 /home/taita/catkin_ws/devel/include/zed_wrapper/reset_odometry.h
 92418b5f79598c9bd8503c0fef41de94 /home/taita/catkin_ws/devel/include/zed_wrapper/reset_tracking.h
@@ -28,6 +29,8 @@ fc9eb41c00bb1c58f79fde26f6e5bd60 /home/taita/catkin_ws/devel/include/zed_wrapper
 b758e32e7d59ffebff03cc03dbc099e9 /home/taita/catkin_ws/devel/include/zed_wrapper/stop_remote_stream.h
 d46f3e36d284c8dbcfed88675c2f443e /home/taita/catkin_ws/devel/include/zed_wrapper/stop_svo_recording.h
 142ff59c3d8570ec1396064e504eb4e9 /home/taita/catkin_ws/devel/include/zed_wrapper/toggle_led.h
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 e529dbf7d3441f1cb7a2353b91f821c1 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros_msgs/msg/_BoundingBox.py
 d7d42e1216187a16cc8ba8061dd01275 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros_msgs/msg/_BoundingBoxes.py
 54cd73aef764435de3a813b848825422 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/darknet_ros_msgs/msg/_CheckForObjectsAction.py
@@ -50,6 +53,7 @@ d4a985fffb1589dcfc56cbcf4e321fd5 /home/taita/catkin_ws/devel/lib/python2.7/dist-
 2551842f96aae31571457714491e62b1 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_Sound.py
 5f1eddb4342c9b9f060d31a3811b0777 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/_VersionInfo.py
 e0374cf6fbbb5f5482e75955f245701c /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_msgs/msg/__init__.py
+<<<<<<< HEAD
 6c1d35f6bb9624a4fe6a0603d8adbd4d /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/srv/__init__.py
 59d5bc06053f2b0b1ca3fd04b34038a3 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/srv/_reset_odometry.py
 7363e1860677bfea8517c6c5433c7d06 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/srv/_reset_tracking.py
@@ -60,6 +64,8 @@ b9d628725102b7c150074723b7c5fd7d /home/taita/catkin_ws/devel/lib/python2.7/dist-
 ac6c9ae2fc68ea9c18f7ed23811d5b54 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/srv/_stop_remote_stream.py
 557fa46b60a9b68e391d011c46a98951 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/srv/_stop_svo_recording.py
 28712930c16b50b66c5ff581cd089317 /home/taita/catkin_ws/devel/lib/python2.7/dist-packages/zed_wrapper/srv/_toggle_led.py
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 1aecfca6fa46c7536341e6f1782dcda6 /home/taita/catkin_ws/devel/share/common-lisp/ros/darknet_ros_msgs/msg/BoundingBox.lisp
 d82abf24e4288ac202eeaae61c97d0f4 /home/taita/catkin_ws/devel/share/common-lisp/ros/darknet_ros_msgs/msg/BoundingBoxes.lisp
 5074ca932dfcd97572adf079dd834ce3 /home/taita/catkin_ws/devel/share/common-lisp/ros/darknet_ros_msgs/msg/CheckForObjectsAction.lisp
@@ -79,6 +85,7 @@ bc4ed2166d3a10de882fcb2404ba9e7c /home/taita/catkin_ws/devel/share/common-lisp/r
 ae1380b921d0cd3b03149e729404e270 /home/taita/catkin_ws/devel/share/common-lisp/ros/turtlebot3_msgs/msg/SensorState.lisp
 f93a86a8ab58a1b98c83a507028e9340 /home/taita/catkin_ws/devel/share/common-lisp/ros/turtlebot3_msgs/msg/Sound.lisp
 4ef5ba6029dbe7b1f3d1fc649ee0de14 /home/taita/catkin_ws/devel/share/common-lisp/ros/turtlebot3_msgs/msg/VersionInfo.lisp
+<<<<<<< HEAD
 646a8917f7ba6b3c73b033c44cf5cda7 /home/taita/catkin_ws/devel/share/common-lisp/ros/zed_wrapper/srv/reset_odometry.lisp
 410e4688eed32fc6f31637e3367ba6e8 /home/taita/catkin_ws/devel/share/common-lisp/ros/zed_wrapper/srv/reset_tracking.lisp
 4698b5edf7153816b51e6687ae2fd1a3 /home/taita/catkin_ws/devel/share/common-lisp/ros/zed_wrapper/srv/set_led_status.lisp
@@ -88,6 +95,8 @@ f07ff8f255d053dcd9ebf8f825223b9f /home/taita/catkin_ws/devel/share/common-lisp/r
 9f02639de8d375e7ca630617bdfde6e5 /home/taita/catkin_ws/devel/share/common-lisp/ros/zed_wrapper/srv/stop_remote_stream.lisp
 4efcb73376b15a9dac198ad3096d0aa1 /home/taita/catkin_ws/devel/share/common-lisp/ros/zed_wrapper/srv/stop_svo_recording.lisp
 34c73ca3646d9f3a2a86f51c6c96d30d /home/taita/catkin_ws/devel/share/common-lisp/ros/zed_wrapper/srv/toggle_led.lisp
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 2e12337baf785e1ffbf8f0c02944c48e /home/taita/catkin_ws/devel/share/gennodejs/ros/darknet_ros_msgs/msg/BoundingBox.js
 1e04162a2fa62fc4d3a1be470f4ec9f2 /home/taita/catkin_ws/devel/share/gennodejs/ros/darknet_ros_msgs/msg/BoundingBoxes.js
 76053d720ccfe5819bf16638f5885214 /home/taita/catkin_ws/devel/share/gennodejs/ros/darknet_ros_msgs/msg/CheckForObjectsAction.js
@@ -107,6 +116,7 @@ d24882e5b268a607194a59d884636ebc /home/taita/catkin_ws/devel/share/gennodejs/ros
 4afabec52f90fc4c67a4b55d3e7c5ac7 /home/taita/catkin_ws/devel/share/gennodejs/ros/turtlebot3_msgs/msg/SensorState.js
 9056e9a939ee7a611f0b977d642d4853 /home/taita/catkin_ws/devel/share/gennodejs/ros/turtlebot3_msgs/msg/Sound.js
 69106a6630ccdfed5c7554905450e7c2 /home/taita/catkin_ws/devel/share/gennodejs/ros/turtlebot3_msgs/msg/VersionInfo.js
+<<<<<<< HEAD
 f4c551b1d39fbb1533274090d02d1053 /home/taita/catkin_ws/devel/share/gennodejs/ros/zed_wrapper/srv/reset_odometry.js
 792c28a8bf3ebbf696904d13c3cf999f /home/taita/catkin_ws/devel/share/gennodejs/ros/zed_wrapper/srv/reset_tracking.js
 6e55ac929703b9e0d9cdb8ee1e85141b /home/taita/catkin_ws/devel/share/gennodejs/ros/zed_wrapper/srv/set_led_status.js
@@ -116,6 +126,8 @@ a4ec3e583224803d4a02b603fa5bf1d7 /home/taita/catkin_ws/devel/share/gennodejs/ros
 698f5e64ac9ed337b48559e04a31bc92 /home/taita/catkin_ws/devel/share/gennodejs/ros/zed_wrapper/srv/stop_remote_stream.js
 aa16ec870d7eb892b900e5532b0a7417 /home/taita/catkin_ws/devel/share/gennodejs/ros/zed_wrapper/srv/stop_svo_recording.js
 e9298e966f9c64f3e0e4ef5834c6c458 /home/taita/catkin_ws/devel/share/gennodejs/ros/zed_wrapper/srv/toggle_led.js
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 885a5ff0bced9a623d4335958fde952c /home/taita/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/manifest.l
 9b01b96d54e5ba338b299682d53dc75e /home/taita/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/BoundingBox.l
 93adb0e7d6f801db022a387b11924673 /home/taita/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/BoundingBoxes.l
@@ -138,6 +150,7 @@ e288488c8f42f96c6f8d8ecb3c390018 /home/taita/catkin_ws/devel/share/roseus/ros/tu
 9bf2a17038cf7fccc63a04b3d6802495 /home/taita/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/SensorState.l
 cd6f52e31c94af34e144e68609ee2925 /home/taita/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/Sound.l
 dc61acfee5716f220967c235d08c4434 /home/taita/catkin_ws/devel/share/roseus/ros/turtlebot3_msgs/msg/VersionInfo.l
+<<<<<<< HEAD
 063bc835291ba11f0c650fe1d2149c02 /home/taita/catkin_ws/devel/share/roseus/ros/zed_wrapper/manifest.l
 7727aaa6a8a483bfcc267b4b6670b4d7 /home/taita/catkin_ws/devel/share/roseus/ros/zed_wrapper/srv/reset_odometry.l
 7337b2dbec363e7079930ad32f6378c7 /home/taita/catkin_ws/devel/share/roseus/ros/zed_wrapper/srv/reset_tracking.l
@@ -148,6 +161,8 @@ ca0135e9036ecadff4431cf9c2b98545 /home/taita/catkin_ws/devel/share/roseus/ros/ze
 560002538bee96b0b4c0574bc7b26709 /home/taita/catkin_ws/devel/share/roseus/ros/zed_wrapper/srv/stop_remote_stream.l
 b7ee37ecfd6a2b79add490f599b44fcc /home/taita/catkin_ws/devel/share/roseus/ros/zed_wrapper/srv/stop_svo_recording.l
 651ef0ae71f311c81c1392d6bba8928e /home/taita/catkin_ws/devel/share/roseus/ros/zed_wrapper/srv/toggle_led.l
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 9cac06e9c0d07910652546393c1ae3fc CMakeFiles/clean_test_results
 25b82e351e821b8758ba99e4f5ff153c darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test
 8918fa98d2c0a02b36512fb4eb501923 darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros
@@ -196,6 +211,7 @@ ddfd6d09ba30b4213c6c992952fae8d7 turtlebot3_msgs/CMakeFiles/_turtlebot3_msgs_gen
 435967c530d0fc5d9376ef1426a91199 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_lisp
 435967c530d0fc5d9376ef1426a91199 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_nodejs
 435967c530d0fc5d9376ef1426a91199 turtlebot3_msgs/CMakeFiles/turtlebot3_msgs_generate_messages_py
+<<<<<<< HEAD
 53b5fa33bcaed0a894249b7bf28fb269 zed-ros-wrapper/zed_wrapper/CMakeFiles/_zed_wrapper_generate_messages_check_deps_reset_odometry
 98ca772f62216ff03640bfc86843499f zed-ros-wrapper/zed_wrapper/CMakeFiles/_zed_wrapper_generate_messages_check_deps_reset_tracking
 782d4f5bb31d2301060481aceab05596 zed-ros-wrapper/zed_wrapper/CMakeFiles/_zed_wrapper_generate_messages_check_deps_set_led_status
@@ -211,3 +227,5 @@ b44e79f726267f516050eed9d5916c0e zed-ros-wrapper/zed_wrapper/CMakeFiles/zed_wrap
 b44e79f726267f516050eed9d5916c0e zed-ros-wrapper/zed_wrapper/CMakeFiles/zed_wrapper_generate_messages_lisp
 b44e79f726267f516050eed9d5916c0e zed-ros-wrapper/zed_wrapper/CMakeFiles/zed_wrapper_generate_messages_nodejs
 b44e79f726267f516050eed9d5916c0e zed-ros-wrapper/zed_wrapper/CMakeFiles/zed_wrapper_generate_messages_py
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d

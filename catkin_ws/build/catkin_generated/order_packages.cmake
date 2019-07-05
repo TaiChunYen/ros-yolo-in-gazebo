@@ -60,6 +60,7 @@ list(APPEND CATKIN_ORDERED_PACKAGES "turtlebot3_description")
 list(APPEND CATKIN_ORDERED_PACKAGE_PATHS "turtlebot3/turtlebot3_description")
 list(APPEND CATKIN_ORDERED_PACKAGES_IS_META "False")
 list(APPEND CATKIN_ORDERED_PACKAGES_BUILD_TYPE "catkin")
+<<<<<<< HEAD
 list(APPEND CATKIN_ORDERED_PACKAGES "zed_ar_track_alvar_example")
 list(APPEND CATKIN_ORDERED_PACKAGE_PATHS "zed-ros-wrapper/examples/zed_ar_track_alvar_example")
 list(APPEND CATKIN_ORDERED_PACKAGES_IS_META "False")
@@ -96,6 +97,8 @@ list(APPEND CATKIN_ORDERED_PACKAGES "zed_wrapper")
 list(APPEND CATKIN_ORDERED_PACKAGE_PATHS "zed-ros-wrapper/zed_wrapper")
 list(APPEND CATKIN_ORDERED_PACKAGES_IS_META "False")
 list(APPEND CATKIN_ORDERED_PACKAGES_BUILD_TYPE "catkin")
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 
 set(CATKIN_MESSAGE_GENERATORS )
 

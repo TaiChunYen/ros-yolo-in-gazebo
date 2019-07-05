@@ -121,8 +121,11 @@ foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
     list(APPEND turtlebot3_navigation_LIBRARIES ${library})
+<<<<<<< HEAD
   elseif(${library} MATCHES "^-l")
     list(APPEND turtlebot3_navigation_LIBRARIES ${library})
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
   elseif(TARGET ${library})
     list(APPEND turtlebot3_navigation_LIBRARIES ${library})
   elseif(IS_ABSOLUTE ${library})

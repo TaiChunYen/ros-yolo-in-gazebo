@@ -1,5 +1,9 @@
 set(_CATKIN_CURRENT_PACKAGE "catkin")
+<<<<<<< HEAD
 set(catkin_VERSION "0.7.18")
+=======
+set(catkin_VERSION "0.7.14")
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 set(catkin_MAINTAINER "Dirk Thomas <dthomas@osrfoundation.org>")
 set(catkin_PACKAGE_FORMAT "2")
 set(catkin_BUILD_DEPENDS "python-empy" "python-argparse" "python-catkin-pkg")

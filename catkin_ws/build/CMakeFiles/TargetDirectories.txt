@@ -278,6 +278,7 @@
 /home/taita/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/rebuild_cache.dir
 /home/taita/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/test.dir
 /home/taita/catkin_ws/build/turtlebot3/turtlebot3_description/CMakeFiles/edit_cache.dir
+<<<<<<< HEAD
 /home/taita/catkin_ws/build/zed-ros-wrapper/examples/zed_ar_track_alvar_example/CMakeFiles/install/strip.dir
 /home/taita/catkin_ws/build/zed-ros-wrapper/examples/zed_ar_track_alvar_example/CMakeFiles/install/local.dir
 /home/taita/catkin_ws/build/zed-ros-wrapper/examples/zed_ar_track_alvar_example/CMakeFiles/install.dir
@@ -389,3 +390,5 @@
 /home/taita/catkin_ws/build/zed-ros-wrapper/zed_wrapper/CMakeFiles/roslint.dir
 /home/taita/catkin_ws/build/zed-ros-wrapper/zed_wrapper/CMakeFiles/roslint_zed_wrapper.dir
 /home/taita/catkin_ws/build/zed-ros-wrapper/zed_wrapper/CMakeFiles/rebuild_cache.dir
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d

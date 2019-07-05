@@ -729,6 +729,7 @@ Linking C executable cmTC_8108f
 make[1]: Leaving directory '/home/taita/catkin_ws/build/CMakeFiles/CMakeTmp'
 
 
+<<<<<<< HEAD
 Determining if the function sgemm_ exists passed with the following output:
 Change Dir: /home/taita/catkin_ws/build/CMakeFiles/CMakeTmp
 
@@ -1097,3 +1098,5 @@ Parsed CXX OpenMP implicit link information from above output:
   implicit fwks: []
 
 
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d

@@ -5,9 +5,14 @@
 # It tries it's best to undo changes from a previously sourced setup file before.
 # Supported command line options:
 # --extend: skips the undoing of changes from a previously sourced setup file
+<<<<<<< HEAD
 # --local: only considers this workspace but not the chained ones
 # In plain sh shell which doesn't support arguments for sourced scripts you can
 # set the environment variable `CATKIN_SETUP_UTIL_ARGS=--extend/--local` instead.
+=======
+#   (in plain sh shell which does't support arguments for sourced scripts you
+#   can set the environment variable `CATKIN_SETUP_UTIL_ARGS=--extend` instead)
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time

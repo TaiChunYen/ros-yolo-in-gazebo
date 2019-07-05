@@ -19,6 +19,7 @@ subdirs("turtlebot3_simulations/turtlebot3_gazebo")
 subdirs("turtlebot3/turtlebot3_slam")
 subdirs("turtlebot3/turtlebot3_teleop")
 subdirs("turtlebot3/turtlebot3_description")
+<<<<<<< HEAD
 subdirs("zed-ros-wrapper/examples/zed_ar_track_alvar_example")
 subdirs("zed-ros-wrapper/tutorials/zed_depth_sub_tutorial")
 subdirs("zed-ros-wrapper/zed_display_rviz")
@@ -28,3 +29,5 @@ subdirs("zed-ros-wrapper/examples/zed_rtabmap_example")
 subdirs("zed-ros-wrapper/tutorials/zed_tracking_sub_tutorial")
 subdirs("zed-ros-wrapper/tutorials/zed_video_sub_tutorial")
 subdirs("zed-ros-wrapper/zed_wrapper")
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d

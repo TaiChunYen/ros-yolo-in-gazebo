@@ -2260,6 +2260,7 @@ turtlebot3_description_xacro_generated_to_devel_space_/fast:
 	$(MAKE) -f turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/build.make turtlebot3/turtlebot3_description/CMakeFiles/turtlebot3_description_xacro_generated_to_devel_space_.dir/build
 .PHONY : turtlebot3_description_xacro_generated_to_devel_space_/fast
 
+<<<<<<< HEAD
 #=============================================================================
 # Target rules for targets named dummy_zed_ar_track_alvar_example
 
@@ -2884,6 +2885,8 @@ roslint_zed_wrapper/fast:
 	$(MAKE) -f zed-ros-wrapper/zed_wrapper/CMakeFiles/roslint_zed_wrapper.dir/build.make zed-ros-wrapper/zed_wrapper/CMakeFiles/roslint_zed_wrapper.dir/build
 .PHONY : roslint_zed_wrapper/fast
 
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3058,6 +3061,7 @@ help:
 	@echo "... trajectory_msgs_generate_messages_py"
 	@echo "... flat_world_imu_node"
 	@echo "... turtlebot3_description_xacro_generated_to_devel_space_"
+<<<<<<< HEAD
 	@echo "... dummy_zed_ar_track_alvar_example"
 	@echo "... zed_depth_sub"
 	@echo "... dummy_zed_display_rviz"
@@ -3106,6 +3110,8 @@ help:
 	@echo "... all_files_zed_wrapper"
 	@echo "... roslint"
 	@echo "... roslint_zed_wrapper"
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 .PHONY : help
 
 

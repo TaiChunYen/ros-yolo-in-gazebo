@@ -49,17 +49,24 @@ system = platform.system()
 IS_DARWIN = (system == 'Darwin')
 IS_WINDOWS = (system == 'Windows')
 
+<<<<<<< HEAD
 PATH_TO_ADD_SUFFIX = ['bin']
 if IS_WINDOWS:
     # while catkin recommends putting dll's into bin, 3rd party packages often put dll's into lib
     # since Windows finds dll's via the PATH variable, prepend it with path to lib
     PATH_TO_ADD_SUFFIX.extend([['lib', os.path.join('lib', 'x86_64-linux-gnu')]])
 
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 # subfolder of workspace prepended to CMAKE_PREFIX_PATH
 ENV_VAR_SUBFOLDERS = {
     'CMAKE_PREFIX_PATH': '',
     'LD_LIBRARY_PATH' if not IS_DARWIN else 'DYLD_LIBRARY_PATH': ['lib', os.path.join('lib', 'x86_64-linux-gnu')],
+<<<<<<< HEAD
     'PATH': PATH_TO_ADD_SUFFIX,
+=======
+    'PATH': 'bin',
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
     'PKG_CONFIG_PATH': [os.path.join('lib', 'pkgconfig'), os.path.join('lib', 'x86_64-linux-gnu', 'pkgconfig')],
     'PYTHONPATH': 'lib/python2.7/dist-packages',
 }
@@ -256,7 +263,10 @@ def find_env_hooks(environ, cmake_prefix_path):
 def _parse_arguments(args=None):
     parser = argparse.ArgumentParser(description='Generates code blocks for the setup.SHELL script.')
     parser.add_argument('--extend', action='store_true', help='Skip unsetting previous environment variables to extend context')
+<<<<<<< HEAD
     parser.add_argument('--local', action='store_true', help='Only consider this prefix path and ignore other prefix path in the environment')
+=======
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
     return parser.parse_known_args(args=args)[0]
 
 
@@ -268,6 +278,7 @@ if __name__ == '__main__':
             print(e, file=sys.stderr)
             sys.exit(1)
 
+<<<<<<< HEAD
         if not args.local:
             # environment at generation time
             CMAKE_PREFIX_PATH = '/home/taita/catkin_ws/devel;/opt/ros/kinetic'.split(';')
@@ -281,6 +292,12 @@ if __name__ == '__main__':
         if os.path.sep != '/':
             base_path = base_path.replace(os.path.sep, '/')
 
+=======
+        # environment at generation time
+        CMAKE_PREFIX_PATH = '/home/taita/catkin_ws/devel;/opt/ros/kinetic'.split(';')
+        # prepend current workspace if not already part of CPP
+        base_path = os.path.dirname(__file__)
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
         if base_path not in CMAKE_PREFIX_PATH:
             CMAKE_PREFIX_PATH.insert(0, base_path)
         CMAKE_PREFIX_PATH = os.pathsep.join(CMAKE_PREFIX_PATH)

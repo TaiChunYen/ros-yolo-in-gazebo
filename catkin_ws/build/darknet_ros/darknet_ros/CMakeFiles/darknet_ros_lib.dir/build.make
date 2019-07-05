@@ -57,6 +57,7 @@ include darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/activation_kernels.cu
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/activations.h
@@ -203,12 +204,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/activation_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/box.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/crop_layer.h
@@ -365,12 +370,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/crop_layer_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer_kernels.cu
@@ -526,12 +535,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/activations.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.h
@@ -695,12 +708,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/blas.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/blas_kernels.cu
@@ -850,12 +867,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/blas_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/box.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/cuda.h
@@ -1012,12 +1033,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/dropout_layer_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/col2im.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/col2im_kernels.cu
@@ -1164,12 +1189,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/col2im_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/cuda.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/im2col.h
@@ -1316,12 +1345,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/im2col_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_im2col_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_im2col_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/activations.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.h
@@ -1484,12 +1517,16 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/convolutional_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o"
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -E make_directory /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
 	cd /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/local/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING=Release -D generated_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_convolutional_kernels.cu.o -D generated_cubin_file:STRING=/home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_convolutional_kernels.cu.o.cubin.txt -P /home/taita/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o.Release.cmake
 
+<<<<<<< HEAD
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/include/darknet.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/box.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/cuda.h
@@ -1645,6 +1682,9 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+=======
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.depend
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.Release.cmake
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/taita/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer_kernels.cu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/taita/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o"

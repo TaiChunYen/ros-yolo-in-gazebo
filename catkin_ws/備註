@@ -12,6 +12,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 打開自製world:
 roslaunch turtlebot3_gazebo self_world.launch
+<<<<<<< HEAD
 roslaunch turtlebot3_gazebo self_world2.launch
 
 
@@ -24,3 +25,9 @@ rtabmap-databaseViewer ~/.ros/rtabmap.db
 
 問題：
 gazebo內雖然在world內能找到大部分的link(turtlebot3 base_footprint)但跑rosrun rtabmap_ros rgbd_odometry rgb/image:=/camera/rgb/image_r depth/image:=/camera/depth/image_raw rgb/camera_info:=/camera/rgb/camera_info _frame_id:=base_footprint時還是找不到camera_rgb_optical_frame
+=======
+
+
+
+
+>>>>>>> 1e3ce309e3138c1191960b800eae7ed9ffe06b7d
