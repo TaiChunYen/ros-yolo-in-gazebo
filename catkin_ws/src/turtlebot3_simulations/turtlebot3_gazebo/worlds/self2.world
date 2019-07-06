@@ -3574,27 +3574,6 @@
       </link>
       <pose frame=''>-4.53248 -3.76992 0 0 -0 0</pose>
     </model>
-    <model name='turtlebot3_waffle_pi'>
-        <pose frame=''>0.000139 0.000396 -0.001007 -3e-06 0.003179 0.002487</pose>
-        <scale>1 1 1</scale>
-        <link name='base_footprint'>
-          <pose frame=''>0.000139 0.000396 -0.001007 -3e-06 0.003179 0.002487</pose>
-          <velocity>1e-06 1e-06 4.4e-05 -4.9e-05 -0.000211 8e-06</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='wheel_left_link'>
-          <pose frame=''>-0.000115 0.144396 0.031992 -1.57001 -0.00317 0.002482</pose>
-          <velocity>-7e-06 2e-06 3.7e-05 -5.4e-05 -0.000223 7e-06</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='wheel_right_link'>
-          <pose frame=''>0.000602 -0.143603 0.031993 -1.57001 0.018847 0.002499</pose>
-          <velocity>-6e-06 2e-06 5.1e-05 -5.4e-05 -0.00017 6e-06</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-    </model>
+    
   </world>
 </sdf>
