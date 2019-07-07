@@ -1,36 +1,44 @@
+# 模擬環境：
+
 export TURTLEBOT3_MODEL=burger(or waffle or waffle_pi)
 
-# waffle相機影像：
+## waffle相機影像：
 rosrun image_view image_view image:=/camera/rgb/image_raw
 
-# 執行yolo:
+## 執行yolo:
 roslaunch darknet_ros yolo_v3.launch
 darknet_ros/darknet_ros/config/ros.yaml可調整輸入影像的topic
 
-# 鍵盤操控TURTLEBOT：
+## 鍵盤操控TURTLEBOT：
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
-# 打開自製world:
+## 打開自製world:
 roslaunch turtlebot3_gazebo self_world.launch
 roslaunch turtlebot3_gazebo self_world2.launch
 
+## rtabmap在自製world運行：
+roslaunch turtlebot3_gazebo self_world2.launch
+(還沒在self_world.launch內加入robot_state_publisher)
+rviz rviz global options的fix frame改成base_footprint
+roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_id:=base_footprint rgb_topic:=/camera/rgb/image_raw depth_topic:=/camera/depth/image_raw camera_info_topic:=/camera/rgb/camera_info
 
-# zedm run rtabmap(use zedm odom):
+# 真實環境
+
+## zedm run rtabmap(use zedm odom):
 roslaunch zed_wrapper zed_camera.launch
 roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_id:=zed_camera_center approx_sync:=false visual_odometry:=false odom_topic:=/zed_node/odom rgb_topic:=/zed_node/rgb/image_rect_color depth_topic:=/zed_node/depth/depth_registered camera_info_topic:=/zed_node/rgb/camera_info
 
-# show rtabmap result:
+## show rtabmap result:
 rtabmap-databaseViewer ~/.ros/rtabmap.db
 
-# print 2d grid map:
+## print 2d grid map:
 run rtabmap.launch than use rviz rviz to subscribe proj_map...etc
 close rtabmap.launch than use rtabmap-databaseViewer file->export 2d map can get pgm map file
 
-# 問題：
-gazebo內雖然在world內能找到大部分的link(turtlebot3 base_footprint)但跑rosrun rtabmap_ros rgbd_odometry rgb/image:=/camera/rgb/image_r depth/image:=/camera/depth/image_raw rgb/camera_info:=/camera/rgb/camera_info _frame_id:=base_footprint時還是找不到camera_rgb_optical_frame
 
-#功能：
+# 測試常用指令：
 rospack find [package名]
+rosrun rqt_tf_tree rqt_tf_tree
 
 
 
