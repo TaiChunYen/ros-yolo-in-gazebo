@@ -44,9 +44,14 @@ close rtabmap.launch than use rtabmap-databaseViewer file->export 2d map can get
 2.    
 rosrun map_server map_saver map:=/rtabmap/proj_map  
 
+## get distance and world coordinate:
+cd ./src/map_label  
+python2.7 listener.py  
+
 # 測試常用指令：
 rospack find [package名]  
-rosrun rqt_tf_tree rqt_tf_tree
+rosrun rqt_tf_tree rqt_tf_tree  
+rostopic type [topic]
 
 
 
