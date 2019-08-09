@@ -38,10 +38,10 @@ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_
 rtabmap-databaseViewer ~/.ros/rtabmap.db
 
 ## print 2d grid map:
-1.    
+method1.  
 run rtabmap.launch than use rviz rviz to subscribe proj_map  
 close rtabmap.launch than use rtabmap-databaseViewer file->export 2d map can get pgm map file  
-2.    
+method2.  
 rosrun map_server map_saver map:=/rtabmap/proj_map  
 
 ## get distance and world coordinate:
