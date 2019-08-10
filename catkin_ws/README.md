@@ -48,6 +48,12 @@ rosrun map_server map_saver map:=/rtabmap/proj_map
 cd ./src/map_label  
 python2.7 listener.py  
 
+## pgm to jpg:
+cd ./src/map_label  
+python2.7 pgm2jpg.py -i [input pgm name] -o [output jpg name]  
+example:  
+python2.7 pgm2jpg.py -i map.pgm -o map.jpg  
+
 # 測試常用指令：
 rospack find [package名]  
 rosrun rqt_tf_tree rqt_tf_tree  

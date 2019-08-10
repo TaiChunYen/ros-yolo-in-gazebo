@@ -28,7 +28,11 @@ class listener():
         self.cx = 611.475
         self.cy = 367.377
 
-        self.camera=np.array([[0,0,0,0]])
+        self.camera = np.array([[0,0,0,0]])
+
+        self.origin_x = -7.726096
+        self.origin_y = -6.218990
+        self.resolution = 0.050000
 
     def callback(self,datas):
         #rospy.loginfo(datas.bounding_boxes[0].probability)
@@ -72,7 +76,9 @@ class listener():
         world = np.dot(r_matrix,self.camera.T)
         #print(world)
         print('world coordinate: {x},{y},{z}'.format(x=world[0][0],y=world[1][0],z=world[2][0]))
-    
+
+        map_c_x = int((world[0][0]-self.origin_x)/self.resolution)
+        map_c_y = int((world[1][0]-self.origin_y)/self.resolution)
         
 
 if __name__ == '__main__':
