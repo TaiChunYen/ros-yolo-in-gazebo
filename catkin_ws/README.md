@@ -54,6 +54,10 @@ python2.7 pgm2jpg.py -i [input pgm name] -o [output jpg name]
 example:  
 python2.7 pgm2jpg.py -i map.pgm -o map.jpg  
 
+## print object label on map:
+cd ./src/map_label  
+python2.7 map_label.py  
+
 # 測試常用指令：
 rospack find [package名]  
 rosrun rqt_tf_tree rqt_tf_tree  

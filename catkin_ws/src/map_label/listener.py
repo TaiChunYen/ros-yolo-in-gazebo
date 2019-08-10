@@ -75,10 +75,11 @@ class listener():
         r_matrix = np.dot(t_matrix,q_matrix)
         world = np.dot(r_matrix,self.camera.T)
         #print(world)
-        print('world coordinate: {x},{y},{z}'.format(x=world[0][0],y=world[1][0],z=world[2][0]))
+        #print('world coordinate: {x},{y},{z}'.format(x=world[0][0],y=world[1][0],z=world[2][0]))
 
         map_c_x = int((world[0][0]-self.origin_x)/self.resolution)
         map_c_y = int((world[1][0]-self.origin_y)/self.resolution)
+        print('map coordinate: {x},{y}'.format(x=map_c_x,y=map_c_y))
         
 
 if __name__ == '__main__':
