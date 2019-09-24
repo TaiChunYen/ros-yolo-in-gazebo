@@ -52,7 +52,8 @@ python2.7 listener.py
 * zed camera intrinsics:  
 https://support.stereolabs.com/hc/en-us/articles/360007497173-What-is-the-calibration-file-
 * turtlebot3 camera intrinsics:  
-turtlebot3/turtlrbot3_description/urdf/
+rostopic echo /camera/rgb/camera_info     
+K = [fx 0 cx 0 fy cy 0 0 1]    
 
 ## pgm to jpg:
 cd ./src/map_label  
