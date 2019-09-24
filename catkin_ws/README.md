@@ -15,7 +15,9 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ## 打開自製world:
 roslaunch turtlebot3_gazebo self_world.launch  
-roslaunch turtlebot3_gazebo self_world2.launch
+roslaunch turtlebot3_gazebo self_world2.launch  
+* 自製貼圖model:  
+https://blog.csdn.net/zyh821351004/article/details/49785855
 
 ## rtabmap在自製world運行：
 roslaunch turtlebot3_gazebo self_world2.launch  
@@ -47,6 +49,10 @@ rosrun map_server map_saver map:=/rtabmap/proj_map
 ## get distance and world coordinate:
 cd ./src/map_label  
 python2.7 listener.py  
+* zed camera intrinsics:  
+https://support.stereolabs.com/hc/en-us/articles/360007497173-What-is-the-calibration-file-
+* turtlebot3 camera intrinsics:  
+turtlebot3/turtlrbot3_description/urdf/
 
 ## pgm to jpg:
 cd ./src/map_label  
@@ -61,7 +67,8 @@ python2.7 map_label.py
 # 測試常用指令：
 rospack find [package名]  
 rosrun rqt_tf_tree rqt_tf_tree  
-rostopic type [topic]
+rostopic type [topic]  
+ls /dev(看裝置有無被電腦讀取)
 
 
 
