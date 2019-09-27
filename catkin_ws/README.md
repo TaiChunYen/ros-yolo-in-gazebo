@@ -60,6 +60,7 @@ cd ./src/map_label
 python2.7 pgm2jpg.py -i [input pgm name] -o [output jpg name]  
 example:  
 python2.7 pgm2jpg.py -i map.pgm -o map.jpg  
+* 調整py裡的圖片大小  
 
 ## print object label on map:
 cd ./src/map_label  
