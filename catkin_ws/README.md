@@ -14,10 +14,13 @@ darknet_ros/darknet_ros/config/ros.yaml可調整輸入影像的topic
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ## 打開自製world:
+roslaunch turtlebot3_gazebo apple.launch  
 roslaunch turtlebot3_gazebo self_world.launch  
 roslaunch turtlebot3_gazebo self_world2.launch  
 * 自製貼圖model:  
-https://blog.csdn.net/zyh821351004/article/details/49785855
+https://blog.csdn.net/zyh821351004/article/details/49785855  
+* model static:  
+http://answers.gazebosim.org/question/13547/how-to-make-a-object-static-in-gazebo/  
 
 ## rtabmap在自製world運行：
 roslaunch turtlebot3_gazebo self_world2.launch  
@@ -54,6 +57,7 @@ https://support.stereolabs.com/hc/en-us/articles/360007497173-What-is-the-calibr
 * turtlebot3 camera intrinsics:  
 rostopic echo /camera/rgb/camera_info     
 K = [fx 0 cx 0 fy cy 0 0 1]    
+* turtlebot3不知為何是定位到載具而非物品  
 
 ## pgm to jpg:
 cd ./src/map_label  

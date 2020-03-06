@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="al_test">
+    <link name='link'>
+      <pose>0 0 0.115 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>.496 .496 .496</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>.496 .496 .496</size>
+          </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://al_test/materials/scripts</uri>
+            <uri>model://al_test/materials/textures</uri>
+            <name>al_test/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+    </link> 
+    <static>1</static>    
+  </model>
+</sdf>

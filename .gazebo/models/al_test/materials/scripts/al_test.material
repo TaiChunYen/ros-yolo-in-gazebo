@@ -1,0 +1,15 @@
+material al_test/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture l_test.jpg
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
