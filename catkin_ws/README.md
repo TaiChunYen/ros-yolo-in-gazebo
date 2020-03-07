@@ -28,6 +28,15 @@ roslaunch turtlebot3_gazebo self_world2.launch
 rviz rviz global options的fix frame改成base_footprint  
 roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_id:=base_footprint rgb_topic:=/camera/rgb/image_raw depth_topic:=/camera/depth/image_raw camera_info_topic:=/camera/rgb/camera_info  visual_odometry:=false odom_topic:=/odom
 
+## rosbag:
+* record:  
+roslaunch turtlebot3_gazebo passion.launch  
+rosbag record /camera/rgb/camera_info /camera/rgb/image_raw/comessed /camera/rgb/image_raw/compressedDepth /odom /tf /tf_static  
+
+* play:  
+roslaunch passion_bag.launch  
+roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_id:=base_footprint rgb_topic:=/camera/data depth_topic:=/camera/depth/image_raw camera_info_topic:=/camera/rgb/camera_info  visual_odometry:=false odom_topic:=/odom subscribe_scan:=false  
+
 # 真實環境
 
 ## 執行yolo:
