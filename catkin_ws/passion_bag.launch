@@ -1,6 +1,17 @@
 <launch>
-  <node pkg="rosbag" type="play" name="player" output="screen" args="--clock /home/taita/catkin_ws/passion.bag"/>
+  <node pkg="rosbag" type="play" name="player" output="screen" args="/home/taita/catkin_ws/passion.bag"/>
 
   <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/rgb/image_raw/ raw out:=camera/data"/>
   
+  <!--start yolov3-->
+  <include file="$(find darknet_ros)/launch/yolov3_passion.launch" />
+
+  <!--my_find_object-->
+  <node pkg="find_object_2d" type="test" name="my_find_object" output="screen">
+    <!--subscribe-->
+    <remap from="image_rect_color" to="/camera/data"/>
+    <remap from="/camera/depth_data" to="/camera/depth/image_raw"/>
+    <remap from="/camera/data_throttled_camera_info" to="/camera/rgb/camera_info"/>
+  </node>
+
 </launch>

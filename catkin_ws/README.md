@@ -37,6 +37,10 @@ rosbag record /camera/rgb/camera_info /camera/rgb/image_raw/comessed /camera/rgb
 roslaunch passion_bag.launch  
 roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_id:=base_footprint rgb_topic:=/camera/data depth_topic:=/camera/depth/image_raw camera_info_topic:=/camera/rgb/camera_info  visual_odometry:=false odom_topic:=/odom subscribe_scan:=false  
 
+## find object with yolo and label on map:
+roslaunch passion_find.launch  
+(reference:https://github.com/TaiChunYen/find_object_yolo)  
+
 # 真實環境
 
 ## 執行yolo:
