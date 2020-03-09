@@ -32,6 +32,7 @@ roslaunch rtabmap_ros rtabmap.launch rtabmap_args:="--delete_db_on_start" frame_
 * record:  
 roslaunch turtlebot3_gazebo passion.launch  
 rosbag record /camera/rgb/camera_info /camera/rgb/image_raw/comessed /camera/rgb/image_raw/compressedDepth /odom /tf /tf_static  
+rosbag record /zed_node/rgb/camera_info /zed_node/rgb/image_rect_color/compressed /zed_node/depth/depth_registered/compressedDepth /zed_node/odom /tf /tf_static  
 
 * play:  
 roslaunch passion_bag.launch  
