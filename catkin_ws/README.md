@@ -61,7 +61,7 @@ method1.
 run rtabmap.launch than use rviz rviz to subscribe proj_map  
 close rtabmap.launch than use rtabmap-databaseViewer file->export 2d map can get pgm map file  
 method2.  
-rosrun map_server map_saver map:=/rtabmap/proj_map  
+rosrun map_server map_saver map:=/rtabmap/grid_map  
 
 ## get distance and world coordinate:
 cd ./src/map_label  
