@@ -55,13 +55,14 @@ def locate_license(img,afterimg):
         #找出轮廓的左上点和右下点，由此计算它的面积和长度比
         r=find_rectangle(c)
         a=(r[2]-r[0])*(r[3]-r[1])   #面积
-        s=(r[2]-r[0])*(r[3]-r[1])   #长度比
+        s=(r[2]-r[0])/(r[3]-r[1])   #长度比
 
         block.append([r,a,s])
     #选出面积最大的3个区域
-    block=sorted(block,key=lambda b: b[1])[-5:]
+    block=sorted(block,key=lambda b: b[1])[-3:]
 
     #使用颜色识别判断找出最像车牌的区域
+    w2_list=[]
     maxweight,maxindex=0,-1
     for i in range(len(block)):
         b=afterimg[block[i][0][1]:block[i][0][3],block[i][0][0]:block[i][0][2]]
@@ -81,13 +82,21 @@ def locate_license(img,afterimg):
         for n in w1:
             w2+=n
         
-        #print(w2)
+        print(block[i][2])
         #选出最大权值的区域
         if w2>maxweight:
             maxindex=i
             maxweight=w2
+        #長寬比接近1:1
+        if w2>0 and 0.5<block[i][2] and block[i][2]<2:
+            w2_list.append(block[i][0])
 
-    return block[maxindex][0]
+    if len(w2_list):
+        return w2_list
+    else:
+        w2_list.append(block[maxindex][0])
+        return w2_list
+    #return block[maxindex][0]
 
 def find_license(img):
     '''
@@ -194,16 +203,21 @@ def find_end(start,arg,black,white,width,black_max,white_max):
     return end
 
 if __name__=='__main__':
-    img=cv2.imread('a2.jpg',cv2.IMREAD_COLOR)
+    img=cv2.imread('a34.jpg',cv2.IMREAD_COLOR)
     #预处理图像
     rect,afterimg=find_license(img)
     #cv2.imshow('My Image', afterimg)
-    cv2.rectangle(afterimg,(rect[0],rect[1]),(rect[2],rect[3]),(0,255,0),2)#沒這行pytesseract會辨識失敗
-    #cv2.imshow('afterimg',afterimg)
+
+    for i in range(len(rect)):
+        cv2.rectangle(afterimg,(rect[i][0],rect[i][1]),(rect[i][2],rect[i][3]),(0,255,0),2)#沒這行pytesseract會辨識失敗
+        #cv2.imshow('afterimg',afterimg)
     
-    crop_img = afterimg[rect[1]:rect[3], rect[0]:rect[2]]
-    #crop_img=deal_license(crop_img)
-    #cv2.imshow('crop_img',crop_img)
+        crop_img = afterimg[rect[i][1]:rect[i][3], rect[i][0]:rect[i][2]]
+        #crop_img=deal_license(crop_img)
+        #cv2.imshow('crop_img',crop_img)
+        cv2.imshow('crop_img%d'%i,crop_img)
+        text = pytesseract.image_to_string(crop_img, lang='eng',config="-psm 9 -c tessedit_char_whitelist=0123456789AB")
+        print(text)
 
     #cutimg=cut_license(img,rect)
     #cv2.imshow('cutimg',cutimg)
@@ -214,8 +228,8 @@ if __name__=='__main__':
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-    text = pytesseract.image_to_string(crop_img, lang='eng',config="-psm 9 -c tessedit_char_whitelist=0123456789AB")
-    print(text)
+    #text = pytesseract.image_to_string(crop_img, lang='eng',config="-psm 9 -c tessedit_char_whitelist=0123456789AB")
+    #print(text)
 
 
 
