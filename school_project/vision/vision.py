@@ -59,7 +59,7 @@ def locate_license(img,afterimg):
 
         block.append([r,a,s])
     #选出面积最大的3个区域
-    block=sorted(block,key=lambda b: b[1])[-3:]
+    block=sorted(block,key=lambda b: b[1])[-5:]
 
     #使用颜色识别判断找出最像车牌的区域
     maxweight,maxindex=0,-1
@@ -67,9 +67,9 @@ def locate_license(img,afterimg):
         b=afterimg[block[i][0][1]:block[i][0][3],block[i][0][0]:block[i][0][2]]
         #BGR转HSV
         hsv=cv2.cvtColor(b,cv2.COLOR_BGR2HSV)
-        #蓝色车牌的范围
-        lower=np.array([100,50,50])
-        upper=np.array([140,255,255])
+        #白牌的范围
+        lower=np.array([0,0,0])
+        upper=np.array([180, 255, 100])
         #根据阈值构建掩膜
         mask=cv2.inRange(hsv,lower,upper)
         #统计权值
@@ -80,7 +80,8 @@ def locate_license(img,afterimg):
         w2=0
         for n in w1:
             w2+=n
-
+        
+        #print(w2)
         #选出最大权值的区域
         if w2>maxweight:
             maxindex=i
@@ -204,10 +205,10 @@ if __name__=='__main__':
     #crop_img=deal_license(crop_img)
     #cv2.imshow('crop_img',crop_img)
 
-    cutimg=cut_license(img,rect)
+    #cutimg=cut_license(img,rect)
     #cv2.imshow('cutimg',cutimg)
 
-    thresh=deal_license(cutimg)
+    #thresh=deal_license(cutimg)
     #cv2.imshow('thresh',thresh)
 
     cv2.waitKey(0)
