@@ -1,7 +1,8 @@
 import cv2
 import numpy as np
+import pytesseract
 
-ori_img = cv2.imread('./output4.jpg')
+ori_img = cv2.imread('./output6.jpg')
 img = cv2.cvtColor(ori_img,cv2.COLOR_BGR2GRAY)
 
 height, width = img.shape[:2]
@@ -55,8 +56,11 @@ for x in range(0,width):
         b = (255,255,255)
         emptyImage[y,x] = b
 
-
-
+if len(roiList)>=2:
+    text1 = pytesseract.image_to_string(roiList[0], lang='eng',config="-psm 10 -c tessedit_char_whitelist=AB")
+    print(text1)
+    text2 = pytesseract.image_to_string(roiList[1], lang='eng',config="-psm 8 -c tessedit_char_whitelist=123456789")
+    print(text2)
 
 
 cv2.imshow('original_img',img)
