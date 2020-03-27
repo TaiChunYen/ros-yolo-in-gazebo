@@ -1,11 +1,13 @@
 import cv2
 import numpy as np
-img = cv2.imread('./output5.jpg', 0)
+
+ori_img = cv2.imread('./output4.jpg')
+img = cv2.cvtColor(ori_img,cv2.COLOR_BGR2GRAY)
 
 height, width = img.shape[:2]
 (_, thresh) = cv2.threshold(img, 150, 255, cv2.THRESH_BINARY) 
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 1)) # 形态学处理:定义矩形结构
-closed = cv2.erode(thresh, kernel, iterations = 1)           # 闭运算：迭代1次
+kernel = np.ones((2,2), np.uint8)# 形态学处理:定义矩形结构cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)# 闭运算：迭代5次cv2.erode(thresh, kernel, iterations = 1)
 #print(closed.shape)
 
 height, width = closed.shape[:2]
@@ -13,6 +15,7 @@ v = [0]*width
 z = [0]*height
 a = 0
 
+split_point = 0
 #垂直投影：统计并存储每一列的黑点数
 for x in range(0, width):               
     for y in range(0, height):
@@ -20,8 +23,12 @@ for x in range(0, width):
             a = a + 1
         else :
             continue
+    if x>0.3*width and x<0.7*width and a>split_point:
+        split_point = a
     v[x] = a
     a = 0
+print('split_point=',split_point)
+print('height=',height)
     
 #创建空白图片，绘制垂直投影图
 roiList = []
@@ -33,10 +40,11 @@ inBlock = False
 l = len(v)
 emptyImage = np.zeros((height, width, 3), np.uint8) 
 for x in range(0,width):
-    if v[x] != height and inBlock==False:
+    #print(v[x])
+    if v[x] < split_point and inBlock==False:
         inBlock = True
         startIndex = x
-    elif v[x] == height and inBlock==True:
+    elif (v[x] >= split_point or x==width-1) and inBlock==True:
         inBlock = False
         endIndex = x
         crop_img = img[:,startIndex:endIndex]
