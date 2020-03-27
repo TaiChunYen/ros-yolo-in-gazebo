@@ -136,11 +136,12 @@ def find_license(img):
 
     '''消除小的区域，保留大块的区域，从而定位车牌'''
     #进行闭运算
-    kernel=np.ones((15,15),np.uint8)
+    kernel=np.ones((8,8),np.uint8)
     closingimg=cv2.morphologyEx(canny,cv2.MORPH_CLOSE,kernel)
     #cv2.imshow('closingimg',closingimg)
 
     #进行开运算
+    kernel=np.ones((10,10),np.uint8)
     openingimg=cv2.morphologyEx(closingimg,cv2.MORPH_OPEN,kernel)
     #cv2.imshow('openingimg',openingimg)
     #再次进行开运算
@@ -203,13 +204,14 @@ def find_end(start,arg,black,white,width,black_max,white_max):
     return end
 
 if __name__=='__main__':
-    img=cv2.imread('a34.jpg',cv2.IMREAD_COLOR)
+    img=cv2.imread('a4.jpg',cv2.IMREAD_COLOR)
     #预处理图像
     rect,afterimg=find_license(img)
-    #cv2.imshow('My Image', afterimg)
+    #cv2.imshow('My Image', afterimg)   
 
     for i in range(len(rect)):
         cv2.rectangle(afterimg,(rect[i][0],rect[i][1]),(rect[i][2],rect[i][3]),(0,255,0),2)#沒這行pytesseract會辨識失敗
+        print((rect[i][0]+rect[i][2])/2.0,(rect[i][1]+rect[i][3])/2.0)
         #cv2.imshow('afterimg',afterimg)
     
         crop_img = afterimg[rect[i][1]:rect[i][3], rect[i][0]:rect[i][2]]

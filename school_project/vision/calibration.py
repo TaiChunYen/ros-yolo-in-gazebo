@@ -1,11 +1,11 @@
 import numpy as np
-import cv2 as cv
+import cv2
 import glob
 # 找棋盘格角点
 # 阈值
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 #棋盘格模板规格
-w = 9
+w = 8
 h = 6
 # 世界坐标系中的棋盘格点,例如(0,0,0), (1,0,0), (2,0,0) ....,(8,5,0)，去掉Z坐标，记为二维矩阵
 objp = np.zeros((w*h,3), np.float32)
@@ -14,7 +14,7 @@ objp[:,:2] = np.mgrid[0:w,0:h].T.reshape(-1,2)
 objpoints = [] # 在世界坐标系中的三维点
 imgpoints = [] # 在图像平面的二维点
 
-images = glob.glob('calib/*.png')
+images = glob.glob('calib720/*.jpg')
 for fname in images:
     img = cv2.imread(fname)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -32,11 +32,11 @@ for fname in images:
 cv2.destroyAllWindows()
 
 # 标定
-ret, mtx, dist, rvecs, tvecs = cv.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
+ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 print(mtx)
 
 # 去畸变
-img2 = cv2.imread('calib/00169.png')
+img2 = cv2.imread('calib720/1.jpg')
 h,  w = img2.shape[:2]
 newcameramtx, roi=cv2.getOptimalNewCameraMatrix(mtx,dist,(w,h),0,(w,h)) # 自由比例参数
 print(newcameramtx)
