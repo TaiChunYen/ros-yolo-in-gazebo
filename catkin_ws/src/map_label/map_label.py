@@ -11,14 +11,16 @@ for line in lines:
     marker_set.append(marker)
 
 ##### DBSCAN #####
+'''
 np_marker_set = np.array(marker_set).astype(np.float64)
 #print(np_marker_set.shape)#(marker num,2)
 clustering = DBSCAN(eps=0.2, min_samples=1).fit(np_marker_set)
 labels = clustering.labels_
 n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)
 #print(n_clusters_)
-
+'''
 ##### show marker cluster result plot #####
+'''
 core_samples_mask = np.zeros_like(labels, dtype=bool)
 core_samples_mask[clustering.core_sample_indices_] = True
 import matplotlib.pyplot as plt
@@ -42,16 +44,20 @@ for k, col in zip(unique_labels, colors):
 
 plt.title('Estimated number of clusters: %d' % n_clusters_)
 plt.show()
-
+'''
 ##### show marker on map #####
-'''height = 217
-map_c_x = int((-1.17358+4.681169)/0.05)
-map_c_y = height - int((0.0806773+3.636700)/0.05)
-
+height = 217
 img = cv2.imread('passion.jpg')
-cv2.circle(img,(map_c_x, map_c_y), 3, (0, 0, 255), -1)
+origin_x = -4.681169
+origin_y = -3.636700
+
+for point in marker_set:
+    map_c_x = int((float(point[0])-origin_x)/0.05)
+    map_c_y = height - int((float(point[1])-origin_y)/0.05)
+    
+    cv2.circle(img,(map_c_x, map_c_y), 3, (0, 0, 255), -1)
 
 cv2.imshow('My Image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-cv2.waitKey(1)'''
+cv2.waitKey(1)
