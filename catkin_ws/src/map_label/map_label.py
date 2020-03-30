@@ -1,4 +1,5 @@
 import cv2
+import math
 import numpy as np
 from sklearn.cluster import DBSCAN
 ##### read marker data #####
@@ -56,7 +57,31 @@ for i in range(len(labels)):
     
 filted_marker = [marker_set[index] for index in marker_filter]
 
+##### calculate position accurancy #####
+
+ground_truth = [[-1.4256+0.248,-0.120952],[-1.4256-0.248,-0.120952],[0.453669+0.248,1.91165],[0.453669-0.248,1.91165],[0.453708+0.248,2.42551],[0.453708-0.248,2.42551]]
+np_ground_truth = np.array(ground_truth).astype(np.float64)
+
+np_filted_marker = np.array(filted_marker).astype(np.float64)
+
+all_error = []
+
+for marker in np_marker_set:#np_filted_marker or np_marker_set
+    min_error=float('Inf')
+    for truth in np_ground_truth:
+        tmp = truth - marker
+        position_error = math.hypot(tmp[0],tmp[1])
+        if position_error < min_error:
+            min_error = position_error
+    
+    if min_error < 0.8:
+        all_error.append(min_error)
+
+avg_error = np.mean(all_error)
+print(avg_error)
+
 ##### show different marker on map #####
+'''
 height = 217
 img = cv2.imread('passion.jpg')
 origin_x = -4.681169
@@ -73,7 +98,7 @@ cv2.imshow('My Image', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 cv2.waitKey(1)
-
+'''
 ##### show marker on map #####
 '''height = 217
 img = cv2.imread('passion.jpg')
