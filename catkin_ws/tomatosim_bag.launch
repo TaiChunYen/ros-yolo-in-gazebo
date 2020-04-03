@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="rosbag" type="play" name="player" output="screen" args="/home/taita/tomatosim.bag"/>
+
+  <node name="republish" type="republish" pkg="image_transport" output="screen" args="compressed in:=/camera/rgb/image_raw/ out:=camera/data"/>
+  
+  <!--start yolov3-->
+  <!--include file="$(find darknet_ros)/launch/yolov3_tomato.launch" /-->
+
+</launch>
